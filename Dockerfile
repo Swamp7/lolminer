@@ -4,10 +4,10 @@ RUN rm /etc/apt/sources.list.d/cuda.list
 
 RUN apt update \ 
     && apt -y install wget \
-    && wget https://github.com/Lolliedieb/lolMiner-releases/releases/download/1.84/lolMiner_v1.84_Lin64.tar.gz \
-    && tar xvzf lolMiner_v1.84_Lin64.tar.gz \
-    && rm lolMiner_v1.84_Lin64.tar.gz
+    && wget https://github.com/Lolliedieb/lolMiner-releases/releases/download/1.86/lolMiner_v1.86_Lin64.tar.gz \
+    && tar xvzf lolMiner_v1.86_Lin64.tar.gz \
+    && rm lolMiner_v1.86_Lin64.tar.gz
 
-WORKDIR /1.84
+WORKDIR /1.86
 
 ENTRYPOINT ["./lolMiner"]
