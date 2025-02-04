@@ -4,11 +4,11 @@ RUN rm /etc/apt/sources.list.d/cuda.list
 
 RUN apt update \ 
     && apt -y install wget \
-    && wget https://github.com/Lolliedieb/lolMiner-releases/releases/download/1.91/lolMiner_v1.91_Lin64.tar.gz \
-    && tar xvzf lolMiner_v1.91_Lin64.tar.gz \
-    && rm lolMiner_v1.91_Lin64.tar.gz \
+    && wget https://github.com/Lolliedieb/lolMiner-releases/releases/download/1.94a/lolMiner_v1.94a_Lin64.tar.gz \
+    && tar xvzf lolMiner_v1.94a_Lin64.tar.gz \
+    && rm lolMiner_v1.94a_Lin64.tar.gz \
     && ln -s libnvidia-ml.so.1 /lib/x86_64-linux-gnu/libnvidia-ml.so
 
-WORKDIR /1.91
+WORKDIR /1.94
 
 ENTRYPOINT ["./lolMiner"] 
