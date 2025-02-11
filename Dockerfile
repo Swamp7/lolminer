@@ -9,6 +9,6 @@ RUN apt update \
     && rm lolMiner_v1.94a_Lin64.tar.gz \
     && ln -s libnvidia-ml.so.1 /lib/x86_64-linux-gnu/libnvidia-ml.so
 
-WORKDIR /1.94
+WORKDIR /1.94a
 
 ENTRYPOINT ["./lolMiner"] 
